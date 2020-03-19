@@ -1,14 +1,14 @@
 password = 'a123456'
-pw_num = 1
-while pw_num >= 1 and pw_num <= 3:
+pw_num = 3
+while True:
 	pw = input('Enter your password: ')
 	if pw == password:
 		print('Login Successfully')
 		break
 	else:
-		print('Wrong Password, ', 'You have tried ', pw_num ,'time(s)' )
-		pw_num = pw_num + 1
-		if pw_num == 4:
+		pw_num = pw_num - 1
+		print('Wrong Password, ', 'You have ', pw_num ,'time(s) left' )
+		if pw_num == 0:
 			print('Password Incorrect')
 			print('Program Shut Down')
 			break
