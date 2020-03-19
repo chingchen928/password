@@ -7,11 +7,10 @@ while pw_num > 0:
 		print('Login Successfully')
 		break
 	else:
-		if pw_num == 0:
-			print('Password Incorrect')
-			print('Program Shut Down')
-		else:
-			print('Wrong Password, ')
+		print('Password Incorrect')
+		if pw_num > 0:
 			print('You have ', pw_num, 'time(s) left')
+		else:
+			print('Program shut down')
 		
 			
